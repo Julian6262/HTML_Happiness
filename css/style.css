@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Montserrat-Medium";
+    src: url("/fonts/Montserrat-Medium.ttf");
+}
+
+body {
+    font-family: Montserrat-Medium, serif;
+}
+
+
+/*HEADER*/
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80px;
+    background-color: #ffb42e;
+}
+
+.header__logo {
+    width: 90px;
+    height: 48px;
+    margin-right: 12%;
+    margin-left: 5%;
+}
+
+.header__link--margin {
+    margin-right: 5%;
+}
+
+.header__link {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.header__link:hover {
+    color: #777777;
+}
+
+
+/*MAIN*/
+.block-participate {
+    height: 630px;
+    background-color: #e8e8e8;
+    position: relative;
+    color: #322c41;
+
+}
+
+.block-participate__img {
+    width: 770px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+
+.block-participate__img2 {
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    right: calc((49vw - 368px));
+    top: 270px;
+    animation: myAnim 11s ease 1s infinite normal forwards;
+}
+
+.block-participate__img3 {
+    position: absolute;
+    right: calc((70vw - 366px));
+    top: 140px;
+    animation: myAnim 12s ease-out 1s infinite alternate both;
+}
+
+.block-participate__img4 {
+    position: absolute;
+    width: 421px;
+    height: 423px;
+    left: -270px;
+    top: 400px;
+    animation: myAnim 9s ease-out 1s infinite alternate both;
+}
+
+.block-participate__date {
+    position: absolute;
+    right: calc((49vw - 500px));
+    top: 72px;
+    font-size: 56px;
+    line-height: 0.7;
+}
+
+.block-participate__date span {
+    font-size: 41px;
+}
+
+.block-participate__block-content {
+    display: flex;
+    text-transform: uppercase;
+    flex-direction: column;
+    width: 529px;
+    position: absolute;
+    top: 69px;
+    left: 122px;
+}
+
+.block-participate__subtitle {
+    font-size: 27px;
+}
+
+.block-participate__title {
+    margin: 23px 0 0 0;
+    font-size: 84px;
+    font-weight: bold;
+}
+
+.block-participate__text {
+    font-size: 20px;
+    margin-top: 23px;
+    text-transform: none;
+}
+
+
+
+
+
+
+
+.block-forwho {
+    height: 800px;
+}
+
+
+@keyframes myAnim {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        transform: translate(2px, 2px);
+    }
+
+    80% {
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
