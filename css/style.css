@@ -48,24 +48,19 @@ header {
 
 
 /*MAIN*/
-/*GREY*/
-.block-grey {
+/*PARTICIPATE*/
+.block-participate {
     background-color: #e8e8e8;
     height: 630px;
-    width: 100%;
-    position: absolute;
 }
 
-.block-grey__img {
+.block-participate__img {
     height: 630px;
     position: absolute;
     right: 0;
 }
 
-
-/*MAIN*/
-/*PARTICIPATE*/
-.block-participate {
+.block-participate_container {
     width: 1020px;
     height: 630px;
     margin-inline: auto;
@@ -90,7 +85,7 @@ header {
     animation: myAnim 12s ease-out 1s infinite alternate both;
 }
 
-.block-grey__img4 {
+.block-participate__img4 {
     position: absolute;
     width: 421px;
     height: 423px;
@@ -348,7 +343,7 @@ span.orange {
 /*MEDIA*/
 /*1400*/
 @media (max-width: 1400px) {
-    .block-grey__img4 {
+    .block-participate__img4 {
         left: -335px;
         transition: 0.5s;
     }
@@ -364,7 +359,7 @@ span.orange {
 /*MEDIA*/
 /*1200*/
 @media (max-width: 1200px) {
-    .block-participate {
+    .block-participate_container {
         width: 85%;
         transition: 0.5s;
     }
@@ -388,7 +383,7 @@ span.orange {
 /*MEDIA*/
 /*992*/
 @media (max-width: 992px) {
-    .block-participate {
+    .block-participate_container {
         font-size: 8px;
         transition: 0.5s;
     }
@@ -435,7 +430,7 @@ span.orange {
         transition: 0.5s;
     }
 
-    .block-participate {
+    .block-participate_container {
         display: flex;
         justify-content: center;
     }
@@ -453,11 +448,11 @@ span.orange {
         display: flex;
     }
 
-    .block-grey {
+    .block-participate {
         height: 900px;
     }
 
-    .block-grey__img {
+    .block-participate__img {
         height: 900px;
     }
 
@@ -486,7 +481,7 @@ span.orange {
         transition: 0.5s;
     }
 
-    .block-grey__img4 {
+    .block-participate__img4 {
         display: none;
     }
 
@@ -550,11 +545,11 @@ span.orange {
         transition: 0.5s;
     }
 
-    .block-grey {
+    .block-participate {
         height: 820px;
     }
 
-    .block-grey__img {
+    .block-participate__img {
         height: 820px;
     }
 
