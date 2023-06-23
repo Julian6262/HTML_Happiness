@@ -180,7 +180,9 @@ header {
 }
 
 .block-questions__inner {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
     align-items: center;
 }
 
@@ -263,6 +265,11 @@ header {
         transition: 0.5s;
     }
 
+    .block-questions {
+        width: 85%;
+        transition: 0.5s;
+    }
+
     .header {
         width: 85%;
     }
@@ -273,8 +280,16 @@ header {
     }
 }
 
+
+/*MEDIA*/
+/*992*/
 @media (max-width: 992px) {
     .block-participate {
+        font-size: 8px;
+        transition: 0.5s;
+    }
+
+    .block-questions {
         font-size: 8px;
         transition: 0.5s;
     }
@@ -308,6 +323,14 @@ header {
         width: 95%;
     }
 
+    .block-questions {
+        font-size: 7px;
+        margin-top: 350px;
+        margin-bottom: 30px;
+        width: 95%;
+        transition: 0.5s;
+    }
+
     .block-participate {
         display: flex;
         justify-content: center;
@@ -334,9 +357,13 @@ header {
         height: 900px;
     }
 
-    .block-button {
+    .block-participate__button {
         margin-top: 460px;
         transition: 0.5s;
+    }
+
+    .block-questions__button {
+        margin-top: 20px;
     }
 
     .block-participate__img2 {
@@ -378,14 +405,32 @@ header {
         width: 80%;
     }
 
-    .block-button {
+    .block-questions {
+        margin-top: 220px;
+        font-size: 6px;
+        height: 100%;
+        width: 80%;
+    }
+
+    .block-questions__header {
+        font-size: 4em;
+    }
+
+    .block-participate__button {
         margin-top: 410px;
         transition: 0.5s;
     }
 
+    .block-questions__button {
+        margin-top: 10px;
+        transition: 0.5s;
+        width: 70%;
+    }
+
     .block-participate__date {
         top: 400px;
-        right: calc(50% - 75px);
+        font-size: 35px;
+        right: calc(50% - 55px);
         transition: 0.5s;
     }
 
@@ -409,9 +454,7 @@ header {
         height: 820px;
     }
 
-    .block-participate__date {
-        font-size: 35px;
-        right: calc(50% - 55px);
-        transition: 0.5s;
+    .block-questions__inner {
+        grid-column: 1 / 3;
     }
 }
