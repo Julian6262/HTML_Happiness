@@ -51,7 +51,6 @@ header {
 /*PARTICIPATE*/
 .block-participate {
     background-color: #e8e8e8;
-    /*height: 630px;*/
 }
 
 .block-participate__img {
@@ -427,15 +426,16 @@ span.orange {
     background-color: #e8e8e8;
     position: relative;
     font-size: 3.7em;
-    z-index: -2;
+    z-index: 0;
 }
 
 .block-author__container {
     width: 1095px;
-    height: 1150px;
+    height: 100%;
     margin-inline: auto;
+    padding-bottom: 170px;
     color: #322c41;
-    text-align: justify;
+    text-align: left;
     position: relative;
 }
 
@@ -460,7 +460,7 @@ span.orange {
 .block-author__inner {
     display: flex;
     font-size: 0.6em;
-    margin-top: 350px;
+    margin-top: 30px;
     text-align: center;
 }
 
@@ -470,18 +470,18 @@ span.orange {
 }
 
 .block-author__img-man {
-    margin-top: 70px;
+    margin-top: 90px;
     width: 500px;
     height: 800px;
     float: right;
+    shape-outside: url(/img/man.png);
+    shape-margin: 20px;
 }
 
 .block-author__img-bank {
-    width: 700px;
+    width: 590px;
     height: 277px;
-    position: absolute;
-    left: -30px;
-    bottom: 310px;
+    margin-top: 30px;
 }
 
 .block-author__text::before {
@@ -500,6 +500,7 @@ span.orange {
 }
 
 .block-author__img2 {
+    width: 50%;
     height: 100%;
     position: absolute;
     z-index: -1;
@@ -509,7 +510,7 @@ span.orange {
     position: absolute;
     width: 298px;
     height: 299px;
-    left: calc(50% - 900px);
+    left: calc(50% - 830px);
     bottom: -140px;
     transition: 0.5s;
     animation: myAnim 9s ease-out 1s infinite alternate both;
@@ -518,8 +519,9 @@ span.orange {
 .block-author__img-tail {
     width: 58px;
     height: 218px;
-    margin-top: 20px;
-    margin-left: 400px;
+    position: absolute;
+    bottom: -76px;
+    left: 50%;
 }
 
 
@@ -573,7 +575,7 @@ span.orange {
         transition: 0.5s;
     }
 
-    .block-expectations__content, .block-result__content {
+    .block-expectations__content, .block-result__content, .block-author__container {
         width: 1020px;
         transition: 0.5s;
     }
@@ -595,6 +597,15 @@ span.orange {
         height: 400px;
         transition: 0.5s;
     }
+
+    .block-author__img-man {
+        width: 450px;
+        height: 750px;
+    }
+
+    .block-author__img-bank {
+        width: 556px;
+    }
 }
 
 
@@ -606,7 +617,7 @@ span.orange {
         transition: 0.5s;
     }
 
-    .block-expectations__content, .block-result__content {
+    .block-expectations__content, .block-result__content, .block-author__container {
         width: 80%;
         transition: 0.5s;
     }
@@ -637,6 +648,37 @@ span.orange {
         height: 370px;
         transition: 0.5s;
     }
+
+    .block-author__img-man {
+        margin-top: 100px;
+        width: 350px;
+        height: 550px;
+    }
+
+    .block-author__img-bank {
+        width: 54%;
+    }
+
+    .block-author__inner {
+        width: 65%;
+    }
+
+    .block-author__container h2, .block-author__container h3 {
+        font-size: 1.3em;
+    }
+
+    .block-author__inner span {
+        font-size: 3em;
+    }
+
+    .block-author__img-tail {
+        width: 48px;
+        height: 170px;
+    }
+
+    .block-author__container {
+        padding-bottom: 120px;
+    }
 }
 
 
@@ -646,6 +688,10 @@ span.orange {
     .block-participate__container, .block-questions, .block-expectations, .block-result__content {
         font-size: 8px;
         transition: 0.5s;
+    }
+
+    .block-author__container {
+        font-size: 0.8em;
     }
 
     .block-participate__block-content {
@@ -685,6 +731,47 @@ span.orange {
         width: 250px;
         height: 300px;
         transition: 0.5s;
+    }
+
+    .block-author__img-bank {
+        display: none;
+    }
+
+    .block-author__img-man {
+        float: left;
+    }
+
+    .block-author__container {
+        text-align: center;
+    }
+
+    .block-author__inner {
+        display: block;
+        margin-left: auto;
+        text-align: end;
+    }
+
+    .block-author__inner p {
+        margin-top: 20px;
+    }
+
+    .block-author__list {
+        text-align: end;
+    }
+
+    .block-author__text::before {
+        position: relative;
+        top: 22px;
+        left: 0;
+        line-height: 0;
+    }
+
+    .block-author__text {
+        text-align: end;
+    }
+
+    .block-result__img {
+        width: 70%;
     }
 }
 
@@ -808,14 +895,20 @@ span.orange {
 
     .block-result__right-row2 {
         margin-top: 40px;
+        transition: 0.5s;
     }
 
     .block-result__content li::before {
         font-size: 65px;
+        transition: 0.5s;
+
     }
 
-    .block-result__text {
-        margin-bottom: 20px;
+    .block-author__img-man {
+        margin-top: 200px;
+        width: 270px;
+        height: 400px;
+        transition: 0.5s;
     }
 }
 
@@ -917,5 +1010,16 @@ span.orange {
         width: 220px;
         height: 210px;
         transition: 0.5s;
+    }
+
+    .block-author__img-man {
+        margin-top: 414px;
+        width: 200px;
+        height: 300px;
+        transition: 0.5s;
+    }
+
+    .block-result__row2-h2 {
+        font-size: 0.8em;
     }
 }
