@@ -51,7 +51,7 @@ header {
 /*PARTICIPATE*/
 .block-participate {
     background-color: #e8e8e8;
-    height: 630px;
+    /*height: 630px;*/
 }
 
 .block-participate__img {
@@ -418,6 +418,108 @@ span.orange {
 
 .block-result__img {
     margin-inline: auto;
+}
+
+
+/*MAIN*/
+/*RESULT*/
+.block-author {
+    background-color: #e8e8e8;
+    position: relative;
+    font-size: 3.7em;
+    z-index: -2;
+}
+
+.block-author__container {
+    width: 1095px;
+    height: 1150px;
+    margin-inline: auto;
+    color: #322c41;
+    text-align: justify;
+    position: relative;
+}
+
+.block-author__container h2 {
+    padding-top: 100px;
+}
+
+.block-author__container h3 {
+    font-size: 1.54em;
+    margin-top: 60px;
+    color: #ffb42e;
+}
+
+.block-author__text {
+    font-size: 0.6em;
+    margin-top: 40px;
+    list-style-type: none;
+    margin-left: 3em;
+    position: relative;
+}
+
+.block-author__inner {
+    display: flex;
+    font-size: 0.6em;
+    margin-top: 350px;
+    text-align: center;
+}
+
+.block-author__inner span {
+    font-weight: bold;
+    font-size: 3.9em;
+}
+
+.block-author__img-man {
+    margin-top: 70px;
+    width: 500px;
+    height: 800px;
+    float: right;
+}
+
+.block-author__img-bank {
+    width: 700px;
+    height: 277px;
+    position: absolute;
+    left: -30px;
+    bottom: 310px;
+}
+
+.block-author__text::before {
+    content: "\2022";
+    color: #fbbe00;
+    font-size: 100px;
+    position: absolute;
+    top: -53px;
+    left: -80px;
+}
+
+.block-author__img {
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+
+.block-author__img2 {
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.block-author__img4 {
+    position: absolute;
+    width: 298px;
+    height: 299px;
+    left: calc(50% - 900px);
+    bottom: -140px;
+    transition: 0.5s;
+    animation: myAnim 9s ease-out 1s infinite alternate both;
+}
+
+.block-author__img-tail {
+    width: 58px;
+    height: 218px;
+    margin-top: 20px;
+    margin-left: 400px;
 }
 
 
