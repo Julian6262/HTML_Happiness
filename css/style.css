@@ -11,9 +11,8 @@
 body {
     font-family: Montserrat-Medium, serif;
     font-size: 10px;
-    background: url("../img/back.png") no-repeat center;
+    background: url("../img/back.png") fixed no-repeat center;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 
@@ -540,12 +539,16 @@ span.orange {
 /*MAIN*/
 /*DIRECTOR*/
 .block-director {
+    background-color: white;
+}
+
+.block-director__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 1095px;
     font-size: 2.2em;
     margin-inline: auto;
-    margin-top: 80px;
+    padding-top: 80px;
     padding-bottom: 80px;
     column-gap: 35px;
     color: #322c41;
@@ -611,7 +614,7 @@ span.orange {
         transition: 0.5s;
     }
 
-    .block-expectations__content, .block-result__content, .block-author__container, .block-director {
+    .block-expectations__content, .block-result__content, .block-author__container, .block-director__container {
         width: 1020px;
         transition: 0.5s;
     }
@@ -653,7 +656,7 @@ span.orange {
         transition: 0.5s;
     }
 
-    .block-expectations__content, .block-result__content, .block-author__container, .block-director {
+    .block-expectations__content, .block-result__content, .block-author__container, .block-director__container {
         width: 80%;
         transition: 0.5s;
     }
@@ -730,7 +733,7 @@ span.orange {
         font-size: 0.8em;
     }
 
-    .block-director {
+    .block-director__container {
         font-size: 1.756em;
     }
 
@@ -830,7 +833,7 @@ span.orange {
         transition: 0.5s;
     }
 
-    .block-expectations__content, .block-result__content, .block-director {
+    .block-expectations__content, .block-result__content, .block-director__container {
         grid-template-columns: 1fr;
     }
 
@@ -951,7 +954,7 @@ span.orange {
         transition: 0.5s;
     }
 
-    .block-director {
+    .block-director__container {
         row-gap: 50px;
         text-align: center;
     }
@@ -1066,13 +1069,30 @@ span.orange {
     }
 
     .block-author__img-man {
-        margin-top: 414px;
+        margin-top: 250px;
         width: 200px;
         height: 300px;
         transition: 0.5s;
+    }
+
+    .block-author h2, .block-author h3 {
+        font-size: 0.8em;
+        margin-top: 0;
+        padding-top: 30px;
+    }
+
+    .block-author__inner p {
+        margin-top: 10px;
+    }
+
+    .block-author__text {
+        margin-top: 10px;
+        margin-left: 0;
     }
 
     .block-result__row2-h2 {
         font-size: 0.8em;
     }
 }
+
+
