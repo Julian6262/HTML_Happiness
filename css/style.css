@@ -570,7 +570,7 @@ span.orange {
     background-color: #e8e8e8;
     text-align: center;
     position: relative;
-    /*z-index: -2;*/
+    z-index: -1;
 }
 
 .block-contacts__container {
@@ -582,7 +582,6 @@ span.orange {
     padding-bottom: 60px;
     align-items: center;
     justify-content: space-around;
-    /*z-index: 10;*/
 }
 
 .block-contacts__content {
@@ -595,7 +594,7 @@ span.orange {
     height: 100%;
     position: absolute;
     left: 0;
-    /*z-index: 0;*/
+    z-index: -1;
 }
 
 .block-contacts__content-text {
