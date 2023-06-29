@@ -510,7 +510,7 @@ span.orange {
     position: absolute;
     width: 298px;
     height: 299px;
-    left: calc(50% - 830px);
+    left: calc(50% - 860px);
     bottom: -140px;
     transition: 0.5s;
     animation: myAnim 9s ease-out 1s infinite alternate both;
@@ -521,7 +521,31 @@ span.orange {
     height: 218px;
     position: absolute;
     bottom: -76px;
-    left: 50%;
+    left: 40%;
+}
+
+
+/*MAIN*/
+/*DIRECTOR*/
+.block-director {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1095px;
+    font-size: 2.2em;
+    margin-inline: auto;
+    margin-top: 80px;
+    padding-bottom: 80px;
+    column-gap: 35px;
+    color: #322c41;
+}
+
+.block-director__header {
+    font-size: 1.39em;
+    color: #ffb42e;
+}
+
+.block-director__text {
+    margin-top: 40px;
 }
 
 
@@ -575,7 +599,7 @@ span.orange {
         transition: 0.5s;
     }
 
-    .block-expectations__content, .block-result__content, .block-author__container {
+    .block-expectations__content, .block-result__content, .block-author__container, .block-director {
         width: 1020px;
         transition: 0.5s;
     }
@@ -617,7 +641,7 @@ span.orange {
         transition: 0.5s;
     }
 
-    .block-expectations__content, .block-result__content, .block-author__container {
+    .block-expectations__content, .block-result__content, .block-author__container, .block-director {
         width: 80%;
         transition: 0.5s;
     }
@@ -692,6 +716,10 @@ span.orange {
 
     .block-author__container {
         font-size: 0.8em;
+    }
+
+    .block-director {
+        font-size: 1.756em;
     }
 
     .block-participate__block-content {
@@ -790,7 +818,7 @@ span.orange {
         transition: 0.5s;
     }
 
-    .block-expectations__content, .block-result__content {
+    .block-expectations__content, .block-result__content, .block-director {
         grid-template-columns: 1fr;
     }
 
@@ -909,6 +937,19 @@ span.orange {
         width: 270px;
         height: 400px;
         transition: 0.5s;
+    }
+
+    .block-director {
+        row-gap: 50px;
+        text-align: center;
+    }
+
+    .block-director__list {
+        list-style: none;
+    }
+
+    .block-director__text {
+        margin-top: 20px;
     }
 }
 
